@@ -1,0 +1,56 @@
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*html {*/
+/*    font-family: Arial, Helvetica, sans-serif;*/
+/*}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 12px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+#section_text_2 {
+    height: 100px;
+    background-color: #f3f3f3;
+}
+
+#section_text_2 .alpha {
+    float: left;
+    width: auto;
+    padding-top: 35px;
+}
+
+#section_text_2 .alpha img {
+    width: 100px;
+}
+
+#section_text_2 .omega{
+    float: right;
+    width: auto;
+    margin-top: 27px;
+    background-color: #F77825;
+    padding: 17px;
+    border-radius: 5%;
+}
+
+#section_text_2 .omega a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container {
+    width: 1180px;
+    /*height: 74px;*/
+
+    /*Hai dòng này để căn giữa*/
+    margin-left: auto;
+    margin-right: auto;
+}
