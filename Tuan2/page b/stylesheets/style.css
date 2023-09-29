@@ -15,6 +15,85 @@ body {
     font-size: 12px;
     font-family: Tahoma, Arial, sans-serif;
 }
+/*common*/
+.mr-40 {
+    margin-left: -40px;
+}
+
+.carousel-caption {
+    position: absolute;
+    color: #fff;
+    top: 472px;
+    left: 256px;
+}
+
+.one-third {
+    width: 33.33333%;
+}
+
+.blue_text {
+    color: #2DC0E8;
+}
+
+.flat_pricing {
+    border: 2px solid #c7c7c7;
+    margin: 20px;
+    background-color: #fff;
+    height: 372px;
+}
+
+.big_title {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.light_gray {
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.flat_pricing_list {
+    padding-left: 0;
+    line-height: 3;
+}
+
+.pix_text {
+    list-style-type: none;
+}
+
+.orange {
+    color: #F77825;
+}
+
+.active_bg_open_blue {
+    font-size: 18px;
+    background-color: #2DC0E8;
+    text-decoration: none;
+    color: #fff;
+    padding: 14px;
+    font-weight: 600;
+    border-radius: 5%;
+}
+
+.active_bg_open_orange {
+    font-size: 18px;
+    background-color: #F77825;
+    text-decoration: none;
+    color: #fff;
+    padding: 14px;
+    font-weight: 600;
+    border-radius: 5%;
+}
+
+.btn {
+    width: 336px;
+    height: 36px;
+    margin: 10px;
+    border-radius: 2%;
+    border: none;
+}
+
+/**/
 
 #section_text_2 {
     height: 100px;
@@ -47,10 +126,182 @@ body {
 }
 
 .container {
-    width: 1180px;
+    width: 900px;
     /*height: 74px;*/
 
     /*Hai dòng này để căn giữa*/
     margin-left: auto;
     margin-right: auto;
+}
+
+#navbar-collapse-02 .nav {
+    height: 46px;
+    /*text-align: center;*/
+    line-height: 46px;
+}
+
+#navbar-collapse-02 .nav li {
+    display: inline-block;
+}
+
+/*#navbar-collapse-02 .nav li:hover {*/
+/*    background-color: #cccccc;*/
+/*    color: white;*/
+/*}*/
+
+.nav .propClone a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 24px;
+    opacity: 0.6;
+}
+
+.right_socials {
+    float: right;
+}
+
+.right_socials .bottom-icons li {
+    display: inline-block;
+}
+
+#section_slider {
+    background-color: #f3f3f3;
+    height: 452px;
+}
+
+.carousel-inner .item {
+    padding-top: 50px;
+}
+
+.carousel-inner .item img {
+    width: 900px;
+    border-radius: 1%;
+}
+
+.carousel-caption > h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -10px;
+}
+
+.carousel-caption > p {
+    font-size: 14px;
+}
+
+
+.top_padding {
+    display: flex;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.logo_style {
+    border-radius: 50%;
+}
+
+.part_st .gym_st {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.part_st .gym_text {
+    font-size: 18px;
+    opacity: 0.6;
+    margin-bottom: 32px;
+}
+
+.link_3_btn {
+    background-color: #F77825;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.link_3_btn .pix_text {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px;
+}
+
+#section_intro_title {
+    background-color: #f3f3f3;
+    margin-top: 30px;
+}
+
+#section_intro_title .container {
+    display: flex;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#section_party_3 {
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding: 50px 0;
+    opacity: 0.9;
+}
+
+#section_party_3 .sixteen {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.2px #fff solid;
+}
+
+#section_party_3 .headtext_style {
+    font-size: 24px;
+    padding-top: 50px
+}
+
+#section_party_3 .segment {
+    background-color: #1C8FF5;
+    width: 80px;
+    height: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+}
+
+.subtext_style {
+    font-size: 19px;
+    opacity: 0.6;
+}
+
+.subscribe_btn {
+    background-color: #1C8FF5;
+    color: #fff;
+}
+
+.foot_st {
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+    font-size: 14px;
+}
+
+.foot_st .alpha {
+    width: 50%;
+    padding-top: 20px;
+    float: left;
+}
+
+.foot_st .omega {
+    width: 50%;
+    float: right;
+    padding-top: 20px;
+    padding-left: 88px;
+    box-sizing: border-box;
+}
+
+.foot_st .omega .likes_st {
+    float: left;
+}
+
+.foot_st .omega .soc_icons {
+    float: right;
+}
+
+.foot_st .soc_icons li {
+    list-style-type: none;
 }
