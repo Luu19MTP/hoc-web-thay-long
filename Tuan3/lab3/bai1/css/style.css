@@ -1,4 +1,5 @@
-* {
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,3 +9,69 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#header {
+    height: 46px;
+    background-color: #ccc;
+    /* position: fixed;  giúp giao diện nổi lên trên */
+    top: 0;
+    left: 0;
+    right: 0;
+    border-left: 4px solid #8d0909;
+    border-bottom: 2px solid #8d0909;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;  /* theo dạng hộp dẫn tới các ul phía sau ko bị lỗi*/
+}
+
+/* khi hover vào thì sẽ hiện cái hộp  */
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,     /* Khi hover vào ul thứ nhất sẽ ko ảnh hưởng đến ul phía sau*/
+#nav .subnav li:hover {
+    color: #fff;
+    background-color: #8d0909;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;
+    background-color: #ccc;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}

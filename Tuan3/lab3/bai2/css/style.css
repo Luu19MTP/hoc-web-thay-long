@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* commom */
+.btn {
+    width: 324px;
+    height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ccc;
+    margin-top: 10px;
+
+}
+
+.in-btn {
+    border: none;
+    background-color: #ccc;
+    font-size: 16px;
+    width: 136px;
+}
+
+.fs-10px {
+    font-size: 10px;
+}
+
+/*  */
+
+#content {
+    border: 4px solid #ccc;
+    width: 384px;
+    height: 348px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+.header {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ep {
+    width: 324px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 36px;
+    /* background-color: #ccc; */
+    margin-top: 20px;
+}
+
+.email {
+    width: 48%;
+    float: left;
+    background-color: #ccc;
+
+}
+
+.phone {
+    width: 48%;
+    float: right;
+    background-color: #ccc;
+}
+
+
+.message {
+    width: 324px;
+    background-color: #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 72px;
+}
+
+
+.submit_btn {
+    margin-left: 24px;
+    color: #fff;
+    background-color: #000;
+    width: 324px;
+    margin-top: 10px;
+    height: 36px;
+    border-radius: 15%;
+
+}
+
