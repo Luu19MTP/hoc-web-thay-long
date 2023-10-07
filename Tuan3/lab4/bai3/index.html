@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Động lực</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<h1 id="greeting"></h1>
+
+<script>
+
+    var greetings = [
+        "Âm thầm nổ lực để sau này trở thành ước mơ của người khác",
+        "Sẽ có người trong gia đình bạn phá vỡ được sự nghèo khó, và tôi tin đó là bạn",
+        "Muốn ngồi được chổ mà không ai ngồi được, thì phải chịu được cảm giác mà không ai chịu được",
+        "Sẽ không ai có thể biết bạn giỏi đến mức nào, nếu bạn không ngừng nổ lực"
+    ];
+
+    var randomIndex = Math.floor(Math.random() * greetings.length);
+    var randomGreeting = greetings[randomIndex];
+
+    document.getElementById("greeting").textContent = randomGreeting;
+</script>
+</body>
+</html>

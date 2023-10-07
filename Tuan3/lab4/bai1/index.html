@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi nền</title>
+    <style>
+        body {
+            transition: 0.5s ease;
+        }
+
+        .bt {
+            text-align: center;
+        }
+
+        button {
+            margin: 5px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="bt">
+    <button style="background-color: orange; border: none;" onclick="changeBackgroundColor('orange')"></button>
+    <button style="background-color: purple; border: none;" onclick="changeBackgroundColor('purple')"></button>
+    <button style="background-color: red; border: none;" onclick="changeBackgroundColor('red')"></button>
+    <button style="background-color: yellow; border: none;" onclick="changeBackgroundColor('yellow')"></button>
+    <button style="background-color: green; border: none;" onclick="changeBackgroundColor('green')"></button>
+    <button style="background-color: blue; border: none;" onclick="changeBackgroundColor('blue')"></button>
+</div>
+
+</body>
+<script>
+    function changeBackgroundColor(color) {
+        document.body.style.backgroundColor = color;
+    }
+</script>
+</html>
