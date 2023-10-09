@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính số lần xuất hiện</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        textarea, input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <textarea id="inputText" rows="5" cols="50" placeholder="Nhập đoạn văn"></textarea>
+    <input type="text" id="searchText" placeholder="Nhập chữ cần tìm ở đoạn trên">
+    <button onclick="countOccurrences()">Tính số lần xuất hiện</button>
+    <p id="result"></p>
+</div>
+
+<script>
+    function countOccurrences() {
+        var inputText = document.getElementById('inputText').value;
+        var searchText = document.getElementById('searchText').value;
+        var count = 0;
+
+        if (inputText && searchText) {
+            var regex = new RegExp(searchText, 'g');
+            count = (inputText.match(regex) || []).length;
+        }
+
+        var resultElement = document.getElementById('result');
+        resultElement.textContent = 'Số lần xuất hiện của dòng "' + searchText + '" trong đoạn văn là: ' + count;
+    }
+</script>
+</body>
+</html>

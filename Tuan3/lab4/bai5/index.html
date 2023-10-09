@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xoay tấm hình</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #image {
+            width: 200px;
+            height: 200px;
+            transition: transform 1s linear;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<img id="image" src="cuteCat.jpg" alt="Tấm hình">
+
+<script>
+    $(document).ready(function() {
+        var rotation = 0;
+
+        function rotateImage() {
+            rotation += 15;
+            $('#image').css('transform', 'rotate(' + rotation + 'deg)');
+
+            if (rotation < 360) {
+                setTimeout(rotateImage, 2000);
+            }
+        }
+
+        setTimeout(rotateImage, 2000);
+    });
+</script>
+</body>
+</html>

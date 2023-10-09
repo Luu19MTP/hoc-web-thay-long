@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Chương trình nhấn button</title>
+</head>
+<body>
+<div class="button-container" id="buttonContainer"></div>
+</body>
+<script>
+    var buttonContainer = document.getElementById('buttonContainer');
+    var buttonNumbers = [];
+
+    // Tạo mảng chứa các số từ 1 đến 64
+    for (var i = 1; i <= 64; i++) {
+        buttonNumbers.push(i);
+    }
+
+    // Hàm tạo soos ngẫu nhieen
+    function getRandomNumber() {
+        var randomIndex = Math.floor(Math.random() * buttonNumbers.length);
+        var randomNumber = buttonNumbers[randomIndex];
+        buttonNumbers.splice(randomIndex, 1); // Xóa số đã lấy khỏi mảng
+        return randomNumber;
+    }
+
+    for (var i = 1; i <= 64; i++) {
+        var randomNumber = getRandomNumber();
+        var button = document.createElement('div');
+        button.className = 'button';
+        button.textContent = randomNumber;
+        button.setAttribute('onclick', 'checkButton(' + randomNumber + ')');
+        buttonContainer.appendChild(button);
+    }
+
+    var currentButton = 1; // bắt đầu
+
+    function checkButton(buttonNumber) {
+        if (buttonNumber === currentButton) {
+
+            var buttons = document.querySelectorAll('.button');
+            buttons.forEach(function(button) {
+                if (parseInt(button.textContent) === buttonNumber) {
+                    button.classList.add('hidden');
+                }
+            });
+            currentButton++;
+
+            // Kiểm tra
+            if (currentButton > 64) {
+                alert('Chúc mừng! Bạn đã ẩn tất cả các số thành công!');
+            }
+        } else {
+            alert('Nhấn sai!');
+        }
+    }
+</script>
+</html>
