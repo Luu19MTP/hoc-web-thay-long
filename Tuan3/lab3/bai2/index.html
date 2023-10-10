@@ -19,14 +19,14 @@
             </div>
 
             <div class="ep">
-                <div class="email ">
+                <div class="email">
                     <p class="fs-10px">EMAIL <i class="fa-solid fa-snowflake fs-10px"></i></p>
-                    <input type="email" name="email"  placeholder=" Enter Your Email" class="in-btn">
+                    <input type="email" name="email" id="emaill"  placeholder=" Enter Your Email" class="in-btn">
                 </div>
 
                 <div class="phone ">
                     <p class="fs-10px">PHONR <i class="fa-solid fa-snowflake fs-10px"></i></p>
-                    <input type="text" name="phone" placeholder=" Enter Your Phone" class="in-btn" style="width: 136px;">
+                    <input type="text" name="phone" id="phone" placeholder=" Enter Your Phone" class="in-btn" style="width: 136px;">
                 </div>
             </div>
 
@@ -289,7 +289,7 @@
 
             <div class="">
                     <span class="send_btn">
-                        <button type="submit" class="submit_btn">
+                        <button type="submit" class="submit_btn" id="check">
                             <span class="editContent">Submit <i class="fa-solid fa-right-long fs-10px"></i></span>
                         </button>
                     </span>
@@ -299,4 +299,32 @@
 </div>
 
 </body>
+<script>
+    $(document).ready(function() {
+        $('#check').click(function() {
+            var email = $('#emaill').val();
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailRegex.test(email)) {
+                $('#emailError').text('');
+                // Gửi yêu cầu xác nhận email tại đây (nếu cần)
+            } else {
+                $('#emailError').text('Email không hợp lệ');
+            }
+        });
+
+        $('#check').click(function() {
+            var phoneNumber = $('#phone').val();
+            var phoneNumberRegex = /^\d{10,}$/;
+
+            if (phoneNumberRegex.test(phoneNumber)) {
+                $('#phoneNumberError').text('');
+                // Xử lý số điện thoại hợp lệ tại đây (nếu cần)
+            } else {
+                $('#phoneNumberError').text('Số điện thoại không hợp lệ');
+            }
+        });
+    });
+</script>
+
 </html>
